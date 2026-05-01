@@ -1,0 +1,365 @@
+.footer {
+  background: radial-gradient(circle at top left, #071827 0%, #030712 38%, #02040a 100%);
+  color: #e5edf7;
+  border-top: 1px solid rgba(0, 198, 255, 0.45);
+}
+
+/* =============================================
+   FRANJA TRUST
+============================================= */
+.footer-trust-bar {
+  background: rgba(0, 198, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 198, 255, 0.12);
+  padding: 12px 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #c8dff0;
+  white-space: nowrap;
+}
+
+.footer-trust-icon {
+  font-size: 15px;
+}
+
+/* =============================================
+   MAIN GRID
+============================================= */
+.footer-main {
+  max-width: 1220px;
+  margin: auto;
+  padding: 4rem 1.5rem 3rem;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 1.2fr 1.4fr;
+  gap: 3.5rem;
+}
+
+/* =============================================
+   BRAND
+============================================= */
+.footer-logo {
+  width: 175px;
+  margin-bottom: 1.2rem;
+}
+
+.footer-brand p {
+  color: #a8b6c8;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  max-width: 360px;
+}
+
+.footer-slogan {
+  font-size: 11px !important;
+  font-weight: 600;
+  color: #0099cc !important;
+  letter-spacing: 0.5px;
+  margin-top: 6px !important;
+  margin-bottom: 14px !important;
+}
+
+/* Redes sociales */
+.footer-redes {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-red {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  background: rgba(0, 198, 255, 0.06);
+  border: 1px solid rgba(0, 198, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8ab4cc;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.footer-red:hover {
+  background: #0066cc;
+  border-color: #0066cc;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.footer-red-wa:hover {
+  background: #25d366;
+  border-color: #25d366;
+}
+
+/* Newsletter */
+.footer-newsletter-label {
+  font-size: 12px !important;
+  font-weight: 600;
+  color: #c8dff0 !important;
+  margin: 0 0 8px !important;
+}
+
+.footer-newsletter-form {
+  display: flex;
+}
+
+.footer-newsletter-input {
+  flex: 1;
+  padding: 9px 12px;
+  background: rgba(0, 198, 255, 0.05);
+  border: 1px solid rgba(0, 198, 255, 0.18);
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 12px;
+  color: #c8dff0;
+  outline: none;
+  min-width: 0;
+}
+
+.footer-newsletter-input::placeholder {
+  color: #3a6a8a;
+}
+
+.footer-newsletter-input:focus {
+  border-color: #00c6ff;
+}
+
+.footer-newsletter-btn {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  padding: 9px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.footer-newsletter-btn:hover {
+  background: #0044aa;
+}
+
+.footer-newsletter-ok {
+  font-size: 11px !important;
+  color: #00cc66 !important;
+  margin: 6px 0 0 !important;
+}
+
+/* =============================================
+   COLUMNAS
+============================================= */
+.footer-column h4 {
+  color: #00c6ff;
+  font-size: 0.9rem;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.footer-column a {
+  display: block;
+  color: #b8c4d6;
+  text-decoration: none;
+  margin-bottom: 0.7rem;
+  font-size: 0.92rem;
+  transition: 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #00c6ff;
+  transform: translateX(4px);
+}
+
+.footer-column p {
+  color: #b8c4d6;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 0.55rem;
+}
+
+.footer-column strong {
+  color: #ffffff;
+}
+
+
+/* =============================================
+   PAGOS
+============================================= */
+.footer-payments {
+  max-width: 1220px;
+  margin: auto;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-payments h4 {
+  color: #00c6ff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.25rem;
+}
+
+.footer-payments p {
+  color: #8fa3ba;
+  font-size: 0.85rem;
+}
+
+.payment-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pay {
+  min-width: 70px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: 0.25s ease;
+  cursor: default;
+}
+
+.pay img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+
+.pay.yape img {
+  height: 34px;
+}
+
+.pay:hover {
+  border-color: #00c6ff;
+  transform: translateY(-2px);
+}
+
+/* Badges de texto para bancos */
+.pay-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: #8ab4cc;
+  letter-spacing: 0.3px;
+}
+
+/* =============================================
+   BOTTOM
+============================================= */
+.footer-bottom {
+  max-width: 1220px;
+  margin: auto;
+  padding: 1.3rem 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: #7f8fa6;
+  font-size: 0.85rem;
+}
+
+.footer-bottom div {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.footer-bottom a {
+  color: #7f8fa6;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #00c6ff;
+}
+
+/* =============================================
+   RESPONSIVE
+============================================= */
+@media (max-width: 900px) {
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-trust-bar {
+    gap: 1rem;
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .footer-payments {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .payment-icons {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 3rem 1.2rem 2rem;
+  }
+
+  .footer-brand p {
+    margin: auto;
+  }
+
+  .footer-redes {
+    justify-content: center;
+  }
+
+  .footer-column a:hover {
+    transform: none;
+  }
+
+  .footer-payments {
+    text-align: center;
+    align-items: center;
+    padding: 1.2rem;
+  }
+
+  .payment-icons {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom div {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .footer-wa-btn {
+    margin: 10px auto 0 !important;
+  }
+}

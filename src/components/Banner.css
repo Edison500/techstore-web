@@ -1,0 +1,233 @@
+/* PESTAÑAS */
+.banner-tabs {
+  display: flex;
+  background: #0f1c2e;
+  border-bottom: 1px solid #1e3050;
+}
+
+.banner-tab {
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a6a8a;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.banner-tab:hover,
+.banner-tab.active {
+  color: #00c6ff;
+  border-bottom-color: #00c6ff;
+}
+
+/* ========================================
+   BANNER PRINCIPAL
+======================================== */
+
+.banner {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #050b18;
+  position: relative;
+}
+
+
+/* ========================================
+   OFERTA PRINCIPAL → SOLO IMAGEN
+======================================== */
+
+.banner-imagen-principal {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.img-banner-principal {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* ========================================
+   TEXTO PARA GAMING / TRABAJO
+======================================== */
+
+.banner-izq {
+  position: relative;
+  z-index: 3;
+  max-width: 620px;
+  padding: 3rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-tag {
+  display: inline-block;
+  background: #e6f9ff;
+  color: #007aa3;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 0.9rem;
+  border: 1px solid #b3e6f7;
+  width: fit-content;
+  letter-spacing: 0.4px;
+}
+
+.banner-titulo {
+  font-size: 2.7rem;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+
+.banner-titulo span {
+  color: #00c6ff;
+}
+
+.banner-sub {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 1.5rem;
+  max-width: 430px;
+  line-height: 1.65;
+}
+
+/* ========================================
+   BOTONES
+======================================== */
+
+.banner-btns {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.6rem;
+}
+
+.btn-primario {
+  background: #0099cc;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s;
+  font-family: inherit;
+}
+
+.btn-primario:hover {
+  background: #007aa3;
+}
+
+.btn-secundario {
+  background: #ffffff;
+  color: #0f1c2e;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #c8d8e8;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.btn-secundario:hover {
+  border-color: #0099cc;
+  color: #0099cc;
+}
+
+/* ========================================
+   INDICADORES DE CONFIANZA
+======================================== */
+
+.banner-trust {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #7a9ab8;
+}
+
+.trust-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0099cc;
+  flex-shrink: 0;
+}
+
+/* ========================================
+   OCULTAR ELEMENTOS ANTIGUOS
+======================================== */
+
+.banner-video,
+.banner-overlay,
+.banner-der,
+.laptop-mock,
+.banner-img,
+.descuento-tag {
+  display: none;
+}
+
+/* ========================================
+   Z-INDEX MENÚ
+======================================== */
+
+.header,
+.navbar,
+.topbar,
+.menu-categorias {
+  position: relative;
+  z-index: 10;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+  .banner {
+    height: auto;
+    min-height: 380px;
+  }
+
+  .banner-izq {
+    padding: 2rem 1.5rem;
+  }
+
+  .banner-titulo {
+    font-size: 1.8rem;
+  }
+
+  .img-banner-principal {
+    object-fit: cover;
+  }
+
+  .banner-tabs {
+    overflow-x: auto;
+  }
+
+  .banner-tab {
+    white-space: nowrap;
+  }
+}

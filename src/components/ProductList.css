@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;900&display=swap');
+
+/* =============================================
+   SECCIÓN PRINCIPAL
+============================================= */
+.ts-section {
+  padding: 4rem 2rem;
+  background: #f0f4f8;
+  font-family: 'Barlow', sans-serif;
+}
+
+.ts-section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ts-section-titulo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0a1628;
+  margin: 0 0 6px;
+  letter-spacing: 0.5px;
+}
+
+.ts-section-sub {
+  font-size: 14px;
+  color: #6a8aaa;
+  margin: 0;
+}
+
+/* =============================================
+   BUSCADOR
+============================================= */
+.ts-buscador-wrap {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto 1.5rem;
+}
+
+.ts-buscador-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  pointer-events: none;
+  color: #7a9ab8;
+}
+
+.ts-buscador {
+  width: 100%;
+  padding: 11px 18px 11px 44px;
+  border: 1.5px solid #d0dce8;
+  border-radius: 30px;
+  font-size: 14px;
+  font-family: 'Barlow', sans-serif;
+  background: #ffffff;
+  color: #0a1628;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.ts-buscador:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.12);
+}
+
+.ts-buscador::placeholder {
+  color: #aabccc;
+}
+
+/* =============================================
+   FILTROS
+============================================= */
+.ts-filtros {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.ts-filtro {
+  padding: 7px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Barlow', sans-serif;
+  border: 1.5px solid #d0dce8;
+  background: #ffffff;
+  color: #4a6a8a;
+  cursor: pointer;
+  transition: all 0.15s;
+  letter-spacing: 0.2px;
+}
+
+.ts-filtro:hover {
+  border-color: #0066cc;
+  color: #0066cc;
+}
+
+.ts-filtro.activo {
+  background: #0066cc;
+  border-color: #0066cc;
+  color: #ffffff;
+}
+
+/* =============================================
+   CONTADOR
+============================================= */
+.ts-contador {
+  text-align: center;
+  font-size: 13px;
+  color: #9ab8cc;
+  margin-bottom: 2rem;
+}
+
+.ts-contador strong {
+  color: #0066cc;
+}
+
+/* =============================================
+   GRID
+============================================= */
+.ts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =============================================
+   CARD
+============================================= */
+.ts-card {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dde8f2;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.ts-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0, 60, 140, 0.13);
+  border-color: #0066cc;
+}
+
+/* Badge OFERTA / NUEVO */
+.ts-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: 'Barlow', sans-serif;
+  padding: 4px 9px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.ts-badge.oferta {
+  background: #ff4444;
+  color: #ffffff;
+}
+
+.ts-badge.nuevo {
+  background: #0066cc;
+  color: #ffffff;
+}
+
+/* Imagen */
+.ts-card-img-wrap {
+  width: 100%;
+  height: 165px;
+  overflow: hidden;
+  background: #e8f0f8;
+}
+
+.ts-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.ts-card:hover .ts-card-img {
+  transform: scale(1.04);
+}
+
+/* Body */
+.ts-card-body {
+  padding: 14px 16px;
+}
+
+.ts-card-cat {
+  font-size: 10px;
+  font-weight: 700;
+  color: #0066cc;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+
+.ts-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0a1628;
+  margin: 0 0 6px;
+  line-height: 1.3;
+}
+
+/* Estrellas */
+.ts-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 7px;
+}
+
+.ts-stars {
+  display: flex;
+  gap: 1px;
+}
+
+.star {
+  font-size: 13px;
+  color: #d0dce8;
+}
+
+.star.filled {
+  color: #f59e0b;
+}
+
+.ts-card-reviews {
+  font-size: 11px;
+  color: #9ab8cc;
+}
+
+/* Descripción */
+.ts-card-desc {
+  font-size: 12px;
+  color: #7a9ab8;
+  margin: 0 0 14px;
+  line-height: 1.55;
+}
+
+/* Footer */
+.ts-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ts-card-precio {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #0a1628;
+  line-height: 1;
+}
+
+.ts-precio-moneda {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a9ab8;
+  margin-right: 2px;
+}
+
+/* Botón agregar */
+.ts-btn-agregar {
+  background: #0066cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Barlow', sans-serif;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+.ts-btn-agregar:hover {
+  background: #0044aa;
+}
+
+.ts-btn-agregar:active {
+  transform: scale(0.96);
+}
+
+/* Sin resultados */
+.ts-no-resultados {
+  text-align: center;
+  color: #7a9ab8;
+  font-size: 14px;
+  padding: 3rem 1rem;
+  grid-column: 1 / -1;
+  font-style: italic;
+}
+
+/* =============================================
+   RESPONSIVE
+============================================= */
+@media (max-width: 768px) {
+  .ts-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .ts-section-titulo {
+    font-size: 1.7rem;
+  }
+
+  .ts-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+
+  .ts-card-img-wrap {
+    height: 130px;
+  }
+
+  .ts-card-titulo {
+    font-size: 13px;
+  }
+
+  .ts-filtros {
+    gap: 6px;
+  }
+
+  .ts-filtro {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ts-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
