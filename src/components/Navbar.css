@@ -13,6 +13,7 @@
 .promo-sep { margin: 0 10px; opacity: .4; }
 
 /* NAVBAR */
+
 .navbar {
   background: #0f1c2e;
   display: flex;
@@ -24,16 +25,22 @@
   box-sizing: border-box;
 }
 .navbar-logo {
-  font-size: 20px;
-  font-weight: 800;
-  color: #00c6ff;
-  text-decoration: none;
-  white-space: nowrap;
-  letter-spacing: -1px;
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  overflow: visible;
 }
-.navbar-logo span { color: #fff; font-weight: 800; }
 
+.navbar-logo img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  transform: scale(1.35);
+
+  filter:
+    brightness(1.2)
+    drop-shadow(0 0 8px rgba(0, 198, 255, 0.6));
+}
 /* BUSCADOR */
 .navbar-search {
   flex: 1;

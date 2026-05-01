@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
+import logo from '../assets/image/logo.png';
 
 export const Footer = () => {
   const [email, setEmail] = useState("");
@@ -46,7 +47,7 @@ export const Footer = () => {
 
         {/* Columna 1 — Brand + redes + newsletter */}
         <div className="footer-brand">
-          <img src="/public/images/logo.png" alt="TechStore" className="footer-logo" />
+          <img src={logo} alt="TechStore" className="footer-logo" />
           <p>
             Tecnología original para gaming, oficina y estudio. Compra segura,
             garantía oficial y atención especializada en Perú.
@@ -141,11 +142,11 @@ export const Footer = () => {
           <p>Pagos seguros aceptados en Perú</p>
         </div>
         <div className="payment-icons">
-          <div className="pay"><img src="/images/visa.png" alt="Visa" /></div>
-          <div className="pay"><img src="/images/mastercard.png" alt="Mastercard" /></div>
+          <div className="pay visa"><img src="/images/visa.png" alt="Visa" /></div>
+          <div className="pay mastercard"><img src="/images/mastercard.png" alt="Mastercard" /></div>
           <div className="pay yape"><img src="/images/yape.png" alt="Yape" /></div>
-          <div className="pay"><img src="/images/plin.png" alt="Plin" /></div>
-          <div className="pay pay-text">Efectivo</div>
+          <div className="pay plin"><img src="/images/plin.png" alt="Plin" /></div>
+          <div className="pay pagoefectivo"><img src= "/images/pagoefectivo.png" alt="Pagofectivo"></img></div>
         </div>
       </section>
 

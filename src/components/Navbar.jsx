@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import logo from '../assets/image/logo.png'
 
 import {
   FaLaptop,
@@ -122,7 +123,7 @@ export const Navbar = ({ cartCount }) => {
 
       <nav className="navbar">
         <a href="#inicio" className="navbar-logo">
-          Tech<span>Store</span>
+          <img src={logo} alt="TechStore" />
         </a>
 
         <form className="navbar-search" onSubmit={handleBusqueda}>
