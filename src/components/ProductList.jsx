@@ -23,7 +23,7 @@ const allProducts = [
   },
   {
     id: 2,
-    titulo: 'Monitor Curvo 4K 27"',
+    titulo: 'Monitor Curvo 4K 32"',
     descripcion: "Panel IPS 144Hz, HDR400, ideal para diseño y gaming.",
     precio: 1299,
     categoria: "monitor",
@@ -78,7 +78,7 @@ const allProducts = [
   },
   {
     id: 7,
-    titulo: 'Monitor Curvo 32"',
+    titulo: 'Monitor 27"',
     descripcion: "VA 165Hz, 1ms, resolución QHD 2560x1440.",
     precio: 899,
     categoria: "monitor",
