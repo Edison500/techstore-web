@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
 import './ProductList.css';
+import laptopImg from '../assets/image/laptop.png'; 
+import MonitorcurvoImg from '../assets/image/monitorcurvo.png';
+import TecladoImg from '../assets/image/teclado.png';
+import MouseImg from '../assets/image/mouse.png';
+import AuricularesImg from '../assets/image/auriculares.png';
+import LaptopgamerImg from '../assets/image/laptopgamer.png';
+import MonitorImg from '../assets/image/monitor.png';
+import AudifonosgamerImg from '../assets/image/audifonosgamer.png';
 
 const allProducts = [
   {
@@ -11,18 +19,18 @@ const allProducts = [
     badge: "OFERTA",
     estrellas: 5,
     reviews: 128,
-    image: "https://picsum.photos/seed/laptop1/400/320",
+    image: laptopImg, // ← cambiar
   },
   {
     id: 2,
-    titulo: 'Monitor 4K 27"',
+    titulo: 'Monitor Curvo 4K 27"',
     descripcion: "Panel IPS 144Hz, HDR400, ideal para diseño y gaming.",
     precio: 1299,
     categoria: "monitor",
     badge: "NUEVO",
     estrellas: 5,
     reviews: 84,
-    image: "https://picsum.photos/seed/monitor1/400/320",
+    image: MonitorcurvoImg,
   },
   {
     id: 3,
@@ -33,7 +41,7 @@ const allProducts = [
     badge: null,
     estrellas: 4,
     reviews: 210,
-    image: "https://picsum.photos/seed/teclado1/400/320",
+    image: TecladoImg,
   },
   {
     id: 4,
@@ -44,7 +52,7 @@ const allProducts = [
     badge: "OFERTA",
     estrellas: 5,
     reviews: 342,
-    image: "https://picsum.photos/seed/mouse1/400/320",
+    image: MouseImg,
   },
   {
     id: 5,
@@ -55,7 +63,7 @@ const allProducts = [
     badge: null,
     estrellas: 4,
     reviews: 97,
-    image: "https://picsum.photos/seed/audio1/400/320",
+    image: AuricularesImg,
   },
   {
     id: 6,
@@ -66,7 +74,7 @@ const allProducts = [
     badge: "NUEVO",
     estrellas: 5,
     reviews: 56,
-    image: "https://picsum.photos/seed/laptop2/400/320",
+    image: LaptopgamerImg,
   },
   {
     id: 7,
@@ -77,7 +85,7 @@ const allProducts = [
     badge: null,
     estrellas: 4,
     reviews: 143,
-    image: "https://picsum.photos/seed/monitor2/400/320",
+    image: MonitorImg,
   },
   {
     id: 8,
@@ -88,7 +96,7 @@ const allProducts = [
     badge: null,
     estrellas: 4,
     reviews: 188,
-    image: "https://picsum.photos/seed/headset1/400/320",
+    image: AudifonosgamerImg,
   },
 ];
 
