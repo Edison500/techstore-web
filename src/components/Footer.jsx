@@ -8,7 +8,7 @@ export const Footer = () => {
 
   const handleNewsletter = (e) => {
     e.preventDefault();
-    if (email.trim()) {
+    if (email.trim()) { 
       setSubscribed(true);
       setEmail("");
       setTimeout(() => setSubscribed(false), 4000);

@@ -14,6 +14,28 @@
 
 /* NAVBAR */
 
+.header-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.35s ease;
+}
+
+.header-navbar.ocultar {
+  transform: translateY(-100%);
+}
+
+.header-navbar.mostrar {
+  transform: translateY(0);
+}
+
+.navbar-logo {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 .navbar {
   background: #0f1c2e;
   display: flex;

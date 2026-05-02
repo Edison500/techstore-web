@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
-import logo from '../assets/image/logo.png'
+import logo from '../assets/image/logo.png';
 
 import {
   FaLaptop,
@@ -19,6 +19,39 @@ export const Navbar = ({ cartCount }) => {
   const [menuAbierto, setMenuAbierto] = useState(false);
   const [busqueda, setBusqueda] = useState('');
   const [dropdownAbierto, setDropdownAbierto] = useState(null);
+  const [mostrarNavbar, setMostrarNavbar] = useState(true);
+
+  const ultimoScroll = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollActual = window.scrollY;
+
+      if (scrollActual > ultimoScroll.current && scrollActual > 120) {
+        setMostrarNavbar(false);
+        setDropdownAbierto(null);
+        setMenuAbierto(false);
+      } else {
+        setMostrarNavbar(true);
+      }
+
+      ultimoScroll.current = scrollActual;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleFuera = (e) => {
+      if (!e.target.closest('.cat-item')) {
+        setDropdownAbierto(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleFuera);
+    return () => document.removeEventListener('mousedown', handleFuera);
+  }, []);
 
   const categorias = [
     {
@@ -85,17 +118,6 @@ export const Navbar = ({ cartCount }) => {
     },
   ];
 
-  useEffect(() => {
-    const handleFuera = (e) => {
-      if (!e.target.closest('.cat-item')) {
-        setDropdownAbierto(null);
-      }
-    };
-
-    document.addEventListener('mousedown', handleFuera);
-    return () => document.removeEventListener('mousedown', handleFuera);
-  }, []);
-
   const toggleDropdown = (id) => {
     setDropdownAbierto(dropdownAbierto === id ? null : id);
   };
@@ -112,7 +134,7 @@ export const Navbar = ({ cartCount }) => {
   };
 
   return (
-    <header>
+    <header className={`header-navbar ${mostrarNavbar ? 'mostrar' : 'ocultar'}`}>
       <div className="promo-bar">
         Envío gratis en Lima desde S/ 199
         <span className="promo-sep">|</span>
@@ -122,9 +144,9 @@ export const Navbar = ({ cartCount }) => {
       </div>
 
       <nav className="navbar">
-        <a href="#inicio" className="navbar-logo">
+        <button type="button" className="navbar-logo">
           <img src={logo} alt="TechStore" />
-        </a>
+        </button>
 
         <form className="navbar-search" onSubmit={handleBusqueda}>
           <input
