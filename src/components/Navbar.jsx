@@ -246,6 +246,12 @@ export const Navbar = ({ cartCount }) => {
               <span>Remates</span>
             </a>
           </li>
+
+          <li className="cat-item">
+            <a href="#contacto" className="cat-btn">
+              <span>Contáctanos</span>
+                </a>
+                  </li>
         </ul>
       </div>
     </header>
